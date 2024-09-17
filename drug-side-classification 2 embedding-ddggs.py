@@ -266,7 +266,7 @@ def apk(actual, predicted, k=10):
 # In[18]:
 
 
-batch_size = 2048
+batch_size = 2048 #1024
 test_batch_size = 4096
 
 
@@ -360,7 +360,7 @@ from sklearn.model_selection import KFold
 
 dropout=0.4
 
-ids = test_eid_dict['effect'].tolist()
+ids = train_eid_dict['effect'].tolist()
 kf = KFold(n_splits=5)
 margin = 0.15
 models = []
